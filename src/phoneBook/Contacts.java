@@ -1,13 +1,12 @@
 package phoneBook;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 public class Contacts extends DataBase{
 	
-	public Contacts(String name) throws IOException {
+	public Contacts(String name){
 		super(name);
 		contacts = super.read();
 	}
